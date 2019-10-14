@@ -1,6 +1,8 @@
 private static final long MOD=(int)(1e9+7);
 private static long pow(long a, long b)
 {
+    a%=MOD;
+    b%=(MOD-1);//if MOD is prime
     long res=1;
     while (b>0)
     {
