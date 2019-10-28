@@ -14,6 +14,7 @@ private static int _lcm(int a, int b){return a/_gcd(a,b)*b;}
 /*  
   Extended GCD. Provides coefficients x,y
   for which ax+by=gcd(a,b).
+  
   Format: _gcd(a,b).
 */
 
