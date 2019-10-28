@@ -1,6 +1,7 @@
 /*
   Binary-Indexed Tree or BIT.
   1-indexed.
+  Format: new BIT(N).
 */
 
 static class BIT
