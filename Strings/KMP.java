@@ -1,6 +1,6 @@
 /*
 	O(N) to create the pi array.
-	pi[i]=lenegth of the longest proper suffix ending at i, which is also a proper prefix.
+	pi[i] = lenegth of the longest proper suffix ending at i, which is also a proper prefix.
 */
 
 private static void calcPi(char str[], int pi[])
