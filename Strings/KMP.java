@@ -1,4 +1,5 @@
 /*
+	Knuth-Morris-Pratt.
 	O(N) to create the pi array.
 	pi[i] = length of the longest proper suffix ending at i, which is also a proper prefix.
 */
