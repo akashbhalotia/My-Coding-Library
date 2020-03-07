@@ -6,11 +6,11 @@
 
 private static void calcPi(char str[], int pi[])
 {
-	int N=str.length,j=0;
+    int N=str.length,j=0;
     for(int i=1;i<N;i++)
-	{
+    {
         while (j>0&&str[i]!=str[j])j=pi[j];
-		if(str[i]==str[j])j++;
+        if(str[i]==str[j])j++;
         pi[i]=j;
     }
 }
