@@ -5,13 +5,15 @@
 	j = fallBack position+1
 */
 
-private static void calcPi(char str[], int pi[])
+private static void calcPi(char str[], int pi[], int N)
 {
-    int N=str.length,j=0;
-    for(int i=1;i<N;i++)
+    for (int i = 1; i < N; i++)
     {
-        while (j>0&&str[i]!=str[j])j=pi[j];
-        if(str[i]==str[j])j++;
-        pi[i]=j;
+	int j = pi[i-1];
+        while (j > 0 && str[i] != str[j])
+            j = pi[j-1];
+	if (str[i] == str[j])
+            j++;
+        pi[i] = j;
     }
 }
