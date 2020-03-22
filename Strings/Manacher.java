@@ -11,7 +11,7 @@
 
 private static void oddLengthPalin(char str[], int N, int d1[]) //centre = i
 {
-	int i,l=0,r=-1,len;
+    int i,l=0,r=-1,len;
     for(i=0;i<N;i++)
     {
         len=(i>r)?1:Math.min(d1[l+r-i],r-i+1);
@@ -23,7 +23,7 @@ private static void oddLengthPalin(char str[], int N, int d1[]) //centre = i
 }
 private static void evenLengthPalin(char str[], int N, int d2[]) //centre is i-1 and i
 {
-	int i,l=0,r=-1,len;
+    int i,l=0,r=-1,len;
     for(i=0;i<N;i++)
     {
         len=(i>r)?0:Math.min(d2[l+r-i+1],r-i+1);
