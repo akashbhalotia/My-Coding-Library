@@ -7,13 +7,10 @@
 
 private static void calcPi(char str[], int pi[], int N)
 {
-    for (int i = 1; i < N; i++)
+    for (int i = 1, j=0; i < N; i++)
     {
-	int j = pi[i-1];
-        while (j > 0 && str[i] != str[j])
-            j = pi[j-1];
-	if (str[i] == str[j])
-            j++;
+	while (j > 0 && str[i] != str[j]) j = pi[j-1];
+        if (str[i] == str[j]) j++;
         pi[i] = j;
     }
 }
