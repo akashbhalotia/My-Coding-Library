@@ -1,0 +1,2 @@
+Sum of first N squares: N(N+1)(2N+1)/6
+Sum of first N odd numbers = N^2
