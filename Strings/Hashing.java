@@ -32,4 +32,20 @@ static class Hashing
     }
     long getHash(){return getHash(0,N-1);}
     long getHash(int l, int r){return (MOD-(hash[r+1]*pow[r-l+1])%MOD+hash[l])%MOD;}
+    boolean isEqual(Hashing h2){return isEqual(h2,0,this.N-1,0,h2.N-1);}
+    boolean isEqual(Hashing h2, int l1, int r1, int l2, int r2){return this.getHash(l1,r1)==h2.getHash(l2,r2);}
+}
+static class DoubleHash
+{
+    Hashing h1,h2;
+    DoubleHash(char str[], long P1, long MOD1, long P2, long MOD2)
+    {
+        h1=new Hashing(str,P1,MOD1);
+        h2=new Hashing(str,P2,MOD2);
+    }
+    boolean isEqual(DoubleHash dh2){return this.h1.isEqual(dh2.h1)&&this.h2.isEqual(dh2.h2);}
+    boolean isEqual(DoubleHash dh2, int l1, int r1, int l2, int r2)
+    {
+        return this.h1.isEqual(dh2.h1,l1,r1,l2,r2)&&this.h2.isEqual(dh2.h2,l1,r1,l2,r2);
+    }
 }
