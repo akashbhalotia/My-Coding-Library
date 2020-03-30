@@ -10,7 +10,7 @@
     To get the value of substring hash in constant time, the hashes are stored as suffix sums.
     When querying for substring hash, l to r, hash[l] includes the extra value of hash[r+1].
     Thus, hash[r+1]*(P raised to size of the substring) is subtracted from hash[l],
-    and the intuition can be easily gained by trying it for a few substrings of a string.
+    and the intuition can be easily gained by trying it out for a few substrings of a string.
     
     Some values for P: 31, 53, 137, 257, 991, 99991, 999917. Or choose any from here: https://tinyurl.com/vhd3xvv
     Some values for MOD: 1e9 +7, +9, +21, +33, +87.
