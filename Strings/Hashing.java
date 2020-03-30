@@ -5,7 +5,15 @@
     Hash for a substring too can be obtained in O(1), using the getHash(l, r) function.
 	
     Hash is computed as: str[0]+str[1]*P+str[2]*(P^2)+...str[N-1]*(P^(N-1)), all under modulo MOD.
-    More details later.
+    This is computed using Horner's rule.
+    
+    To get the value of substring hash in constant time, the hashes are stored as suffix sums.
+    When querying for substring hash, l to r, hash[l] includes the extra value of hash[r+1].
+    Thus, hash[r+1]*(P raised to size of the substring) is subtracted from hash[l],
+    and the intuition can be easily obtained by trying it for a few substrings of a string.
+    
+    Some values for P: 31, 53, 137, 257, 991, 99991, 999917. Or choose any from here: https://tinyurl.com/vhd3xvv
+    Some values for MOD: 1e9 +7, +9, +21, +33, +87.
 */
 
 static class Hashing
