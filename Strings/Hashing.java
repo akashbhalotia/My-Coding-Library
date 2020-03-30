@@ -5,6 +5,7 @@
 	Hash for a substring too can be obtained in O(1), using the getHash(l, r) function.
 	
 	Hash is computed as: str[0]+str[1]*P+str[2]*(P^2)+...str[N-1]*(P^(N-1)), all under modulo MOD.
+	More details later.
 */
 
 static class Hashing
