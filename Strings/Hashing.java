@@ -17,12 +17,12 @@ static class Hashing
     Hashing(char str[], long P, long MOD)
     {
         this.N=str.length;this.P=P;this.MOD=MOD;
-		    hash=new long[N+1];pow=new long[N+1];
+        hash=new long[N+1];pow=new long[N+1];
         init(str);
     }
     void init(char str[])
     {
-		    pow[0]=1;
+        pow[0]=1;
         for(int i=N-1;i>=0;i--)
         {
             hash[i]=((hash[i+1]*P)%MOD+(str[i]-'a'+1))%MOD;
