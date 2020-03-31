@@ -37,3 +37,28 @@ public static int countMatches1(char text[], char pat[])
     }
     return count;
 }
+
+/*
+    But if multiple patterns/texts are involved, we can follow this, in order to avoid recomputing
+    pi for the same pattern.
+*/
+
+public static int countMatches2(char text[], char pat[])
+{
+    int M=text.length, N=pat.length, count=0;
+    int[] pi=new int[N];
+    calcPi(pat,pi,N);
+
+    for(int i=0,j=0;i<M;i++)
+    {
+        while (j>0&&text[i]!=pat[j]) j=pi[j-1];
+        if(text[i]==pat[j])j++;
+        if(j==N)
+        {
+            System.out.println("Found at index "+(i-N+1)); //0-indexed
+            count++;
+            j=pi[j-1];
+        }
+    }
+    return count;
+}
