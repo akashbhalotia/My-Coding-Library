@@ -18,6 +18,7 @@ private static void calcPi(char str[], int pi[], int N)
 /*
     To perform pattern matching on a text, one way is to make a new string: pattern+'$'+text.
     Then compute pi for this string, and print the positions which have a pi value of pattern.length
+    O(M) to match. Total = O(M+N). Single pattern and single text.
 */
 
 public static int countMatches1(char text[], char pat[])
@@ -40,7 +41,7 @@ public static int countMatches1(char text[], char pat[])
 
 /*
     But if multiple patterns/texts are involved, we can follow this, in order to avoid recomputing
-    pi for the same pattern.
+    pi for the same pattern. O(M) to match. Total = O(M+N). Single pattern and single text.
 */
 
 public static int countMatches2(char text[], char pat[])
