@@ -17,7 +17,7 @@ private static void calcPi(char str[], int pi[], int N)
 
 /*
     To perform pattern matching on a text, one way is to make a new string: pattern+'$'+text.
-    Then compute pi for this string, and print the positions which have a pi value of pattern.length
+    Then compute pi for this string, and print the positions which have a pi value of pattern.length .
     O(M) to match. Total = O(M+N). Single pattern and single text.
 */
 
