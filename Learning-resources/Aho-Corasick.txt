@@ -1,1 +1,2 @@
+https://cp-algorithms.com/string/aho_corasick.html
 https://www.toptal.com/algorithms/aho-corasick-algorithm
