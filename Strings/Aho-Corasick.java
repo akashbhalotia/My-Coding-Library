@@ -8,10 +8,10 @@
   First we build a prefix automaton of the patterns, in the form of a trie.
   Then the automaton searches for the patterns in a text, character by character.
   
-  1) Insert all the patterns one by one, along with their ids: insert(id, char[] pattern). O(N)
-  2) Call the build() function to build an automaton of the inserted patterns. O(N)
+  1) Insert all the patterns one by one, along with their ids: insert(id, char[] pattern). O(N).
+  2) Call the build() function to build an automaton of the inserted patterns. O(N).
   3) call find(char text[]). Returns an ArrayList<Integer>, which has the indices of the 
-     each pattern present in the text. O(M+ans)
+     each pattern present in the text. O(M+ans).
   
   Does not support empty patterns. 
   
