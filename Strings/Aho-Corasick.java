@@ -123,10 +123,9 @@ static class AhoCorasick
 	        }
 
 	        int current=(trie.get(v).isLeaf)?v:trie.get(v).nextWord;
-          count+=trie.get(current).totalCount;
-          
-	        while (current!=root) //don't include if the indices are not needed.
+	        while (current!=root)
 	        {
+	            count+=trie.get(current).count;
 	            idx.add(trie.get(current).wordID);
 	            current=trie.get(current).nextWord;
 	        }
