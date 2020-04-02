@@ -7,6 +7,8 @@
   Similar to Z algorithm.
   Let l to r be a palindrome. Let i<=r. Both halves are symmetrical, thus answer for i 
   can be obtained from the first half.
+  
+  For shorter code, refer to this: https://tinyurl.com/v4lc4h5
 */
 
 private static void oddLengthPalin(char str[], int N, int d1[]) //centre = i
