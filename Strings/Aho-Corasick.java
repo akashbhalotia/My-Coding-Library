@@ -22,7 +22,7 @@
   If we only want the total count of all occurrences of all patterns, 
   we can get that in O(M+N), using totalCount.
   
-  Supports only lowercase latin letters. 
+  Supports only lowercase latin letters. Can be modified to support only uppercase. 
   For other alphabet, use Hashmap (may have overheads).
 */
 
