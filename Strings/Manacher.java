@@ -21,7 +21,7 @@ private static void oddLengthPalin(char str[], int N, int d1[]) //centre = i
         if(i+len>r){l=i-len;r=i+len;}
     }
 }
-private static void evenLengthPalin(char str[], int N, int d2[]) //centre is i-1 and i
+private static void evenLengthPalin(char str[], int N, int d2[]) //centre is i-1 and i. Stored in i.
 {
     int i,l=0,r=-1,len;
     for(i=0;i<N;i++)
