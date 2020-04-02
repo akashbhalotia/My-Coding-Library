@@ -17,13 +17,13 @@
   
   Supports duplicate patterns, and also counts them correctly, but only stores the index
   of their last occurrence in the list of patterns. If we want all the indices, 
-  make wordID a list, instead of an int.
+  make 'wordID' a list, instead of an int.
   
   If we only want the total count of all occurrences of all patterns, 
-  we can get that in O(M+N), using totalCount.
+  we can get that in O(M+N), using 'totalCount'.
   
   Supports only lowercase latin letters. Can be modified to support only uppercase. 
-  For other alphabet, use Hashmap (may have overheads).
+  For other alphabet, make 'next' array a Hashmap (may have overheads).
 */
 
 private static final int ALPHA=26;
