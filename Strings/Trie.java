@@ -7,8 +7,10 @@
   
   Inserting takes O(ALPHA*N) total, where ALPHA is the size of the alphabet, and N 
   is the total length of all the input strings. To make it O(N), we can use a Hashmap, 
-  but it may have high overheads. Clear takes O(N).
+  but it may have high overheads. Hashmap can also be used for higher alphabet sizes,
+  or when the string may contain characters other than lowercase latin letters.
   
+  Clear takes O(N).
   Checking if a string exists in the trie just takes O(M), where M is the size of the string to be searched.
 */
 
