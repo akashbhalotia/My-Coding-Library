@@ -6,7 +6,7 @@
   
   Inserting takes O(ALPHA*N) total, where ALPHA is the size of the alphabet, and N 
   is the total length of all the input strings. To make it O(N), we can use a Hashmap, 
-  but it may have high overheads.
+  but it may have high overheads. Can use Bitset too, if needed.
   
   Checking if a string exists just takes O(M), where M is the size of the string to be searched.
 */
