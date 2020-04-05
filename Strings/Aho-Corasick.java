@@ -29,6 +29,11 @@
   
   Refer to https://www.toptal.com/algorithms/aho-corasick-algorithm in case of any doubts.
   To find the words that start at each position, reverse all input.
+  (Patterns, text and also the array which stores the number of patterns 
+  ending at each position, if such an array is needed).
+   
+   Problem: https://codeforces.com/contest/1202/problem/E
+   Solution: https://codeforces.com/contest/1202/submission/75570323
 */
 
 private static final int ALPHA=26;
