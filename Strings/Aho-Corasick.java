@@ -21,8 +21,8 @@
   
   If we only want the total count of all occurrences of all patterns, 
   we can get that in O(M+N), using 'totalCount'. It is int, as there can be at max 
-  N number of patterns ending at each node. However, their sum can be N^2, thus make sure
-  to make the sum long.
+  N number of patterns ending at each node. However, THEIR SUM CAN BE N^2, THUS MAKE SURE
+  TO MAKE THE SUM LONG.
   
   Supports only lowercase latin letters. Can be modified to support only uppercase. 
   For other alphabet, make 'next' array a Hashmap (may have overheads).
