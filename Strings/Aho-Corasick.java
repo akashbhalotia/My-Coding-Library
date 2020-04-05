@@ -20,7 +20,9 @@
   make 'wordID' a list, instead of an int.
   
   If we only want the total count of all occurrences of all patterns, 
-  we can get that in O(M+N), using 'totalCount'.
+  we can get that in O(M+N), using 'totalCount'. It is int, as there can be at max 
+  N number of patterns ending at each node. However, their sum can be N^2, thus make sure
+  to make the sum long.
   
   Supports only lowercase latin letters. Can be modified to support only uppercase. 
   For other alphabet, make 'next' array a Hashmap (may have overheads).
@@ -36,8 +38,8 @@ static class AhoCorasick
 	private ArrayList<Node> trie;
 	private class Node
 	{
-	    int next[], parent, wordID, link, nextWord, count;
-	    char pch; long totalCount=0;
+	    int next[], parent, wordID, link, nextWord, count, totalCount;
+	    char pch;
 	    boolean isLeaf;
 
 	    Node()
