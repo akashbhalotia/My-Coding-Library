@@ -26,6 +26,7 @@
   For other alphabet, make 'next' array a Hashmap (may have overheads).
   
   Refer to https://www.toptal.com/algorithms/aho-corasick-algorithm in case of any doubts.
+  To find the words that start at each position, reverse all input.
 */
 
 private static final int ALPHA=26;
