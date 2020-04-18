@@ -25,6 +25,8 @@ static class DSU
     {
         a=find_set(a);
         b=find_set(b);
+      
+        if(a==b) return;
             
         if(size[a]<size[b])
         {
