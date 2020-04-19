@@ -2,6 +2,8 @@
   Binary-Indexed Tree or BIT.
   1-indexed.
   Format: new BIT(N).
+  
+  Take care to make the table long if any range sum has a chance to exceed int size.
 */
 
 static class BIT
