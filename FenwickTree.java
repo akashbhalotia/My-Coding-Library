@@ -4,6 +4,8 @@
   Format: new BIT(N).
   
   Take care to make the table long if any range sum has a chance to exceed int size.
+  MOD inside fenwick tree, when needed, will be applied to update, sum and rangeSum functions. 
+  MOD inside fenwick tree affects its speed significantly.
 */
 
 static class BIT
