@@ -1,3 +1,5 @@
 Online CHT:
 Using set: https://codeforces.com/contest/319/submission/47168497?fbclid=IwAR1GIc8DSvlB9vd7Kh_7bOdfgcWqbIx2Nd2HYTOmQNFQksiuJ-6DdJWhYys
 Lichao and Sqrt: https://codeforces.com/contest/319/submission/53460293?fbclid=IwAR2FBkaA6VrtQ7IK8Uw7_fGRlSt5BReqQcyyxwWZ_PGtqPCfoaMOYQG289s
+
+https://codeforces.com/blog/entry/75929
