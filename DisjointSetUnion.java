@@ -9,6 +9,7 @@ static class DSU
     {
         parent=new int[N];
         size=new int[N];
+        for(int i=0;i<N;i++) make_set(i);
     }
     void make_set(int v)
     {
