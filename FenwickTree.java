@@ -1,6 +1,6 @@
 /*
   Binary-Indexed Tree or BIT.
-  1-indexed.
+  0-indexed. (Internally it is 1-indexed, but we don't care about that while using it).
   Format: new BIT(N).
   
   Take care to make the table long if any range sum has a chance to exceed int size.
@@ -13,13 +13,14 @@ static class BIT
     int size;
     int[] table;
         
-    BIT(int size) //1-indexed
+    BIT(int size) 
     {
         table=new int[size+1];
         this.size=size+1;
     }
     void update(int i, int delta)
     {
+        i++;
         while(i<size)
         {
             table[i]+=delta;
@@ -28,7 +29,7 @@ static class BIT
     }
     int sum(int i)
     {
-        int s=0;
+        int s=0; i++;
         while (i>0)
         {
             s+=table[i];
