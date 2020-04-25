@@ -3,7 +3,7 @@
   
   Possible solutions: 
   1) Best: Try using the stack data structure.
-  2) Implemnt Runnable. Create a thread and solve the question in the run method.
+  2) Implement Runnable. Create a thread and solve the question in the run method.
   
   https://letsdocp.wordpress.com/2018/06/22/java-in-competitive-programming/
 */
