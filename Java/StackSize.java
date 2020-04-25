@@ -1,5 +1,5 @@
 /*
-  Java recusrion stack is pretty small in size, and this may cause issues sometimes. 
+  Java recursion stack is pretty small in size, and this may cause issues sometimes. 
   
   Possible solutions: 
   1) Best: Try using the stack data structure.
