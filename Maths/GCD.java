@@ -21,12 +21,7 @@ private static int _lcm(int a, int b){return a/_gcd(a,b)*b;}
 private static int X,Y;
 private static int _gcd(int a, int b)
 {
-    if(a==0)
-    {
-        X=0;
-        Y=1;
-        return b;
-    }
+    if(a==0){X=0; Y=1; return b;}
     int g=_gcd(b%a,a);
     int x1=X,y1=Y;
 
