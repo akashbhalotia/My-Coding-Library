@@ -36,7 +36,7 @@ private static long CRT(long[] b, long[] m)
    long prod=1, res=0; int i, N=b.length;
 
    for(i=0;i<N;i++) prod*=m[i];
-   for(i=0;i<N;i++) res=(res+b[i]*prod/m[i]*inverse(m[i],prod)%prod)%prod;
+   for(i=0;i<N;i++) res=(res+b[i]*prod/m[i]%prod*inverse(prod/m[i], m[i])%prod)%prod;
    
    return res%prod;
 }
