@@ -13,8 +13,12 @@
   All m should be co-prime.
   Product of all m should fit inside long.
   
-  _gcd: extended euclidean gcd, useful for obtaining inverse
-        when m is not prime.
+  _gcd: extended euclidean gcd, useful for obtaining inverse when m is not prime.
+  
+  res  = sum of all (b[i] * Ni * xi) % prod, where
+  prod = m1*m2*m3*...*mn
+  Ni   = prod/m[i]
+  xi   = inverse of Ni (mod m[i])
 */
 
 
