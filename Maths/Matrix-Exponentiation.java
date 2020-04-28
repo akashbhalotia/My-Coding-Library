@@ -3,7 +3,7 @@
   
   Need to speed it up.
   
-  Refer to:
+  Refer to the following when free, and try to speed it up:
   1) https://www.hackerearth.com/practice/notes/matrix-exponentiation-1/#c225403
   2) https://github.com/Ashishgup1/Competitive-Coding/blob/master/Matrix%20Struct.cpp
   3) https://codeforces.com/contest/1117/problem/D  : uwi's and xodiac's solutions.
