@@ -8,6 +8,7 @@
   2) https://github.com/Ashishgup1/Competitive-Coding/blob/master/Matrix%20Struct.cpp
   3) https://codeforces.com/contest/1117/problem/D  : uwi's and xodiac's solutions.
   4) https://codeforces.com/blog/entry/65365?#comment-493813
+  5) https://github.com/kth-competitive-programming/kactl/blob/master/content/data-structures/Matrix.h
   
   In case pow is called multiple times, make res and store static, create a 'clear'
   function, and use them, instead of creating them in the pow function everytime.
