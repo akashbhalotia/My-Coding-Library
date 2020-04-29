@@ -1,3 +1,4 @@
 https://www.hackerearth.com/practice/notes/matrix-exponentiation-1/
 https://codeforces.com/blog/entry/14579
 https://codeforces.com/blog/entry/67776
+http://zobayer.blogspot.com/2010/11/matrix-exponentiation.html
