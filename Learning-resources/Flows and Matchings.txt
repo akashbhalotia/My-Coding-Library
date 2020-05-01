@@ -1,0 +1,3 @@
+Dinic: https://youtu.be/M6cm8UeeziI
+Hungarian Algo/Assignment problem: https://www.cse.ust.hk/~golin/COMP572/Notes/Matching.pdf
+Bipartite Matching: https://www.toptal.com/algorithms/maximum-flow-linear-assignment-problem
