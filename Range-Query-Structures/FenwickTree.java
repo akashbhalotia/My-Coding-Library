@@ -34,8 +34,20 @@ static class BIT
         {
             s+=table[i];
             i-=Integer.lowestOneBit(i);//i-=i&-i
-            }
+        }
         return s;
     }
     int rangeSum(int i, int j){return sum(j)-sum(i-1);}
+	int search(int val)
+	{
+		int idx=Integer.highestOneBit(size-1), pos=-1, i=idx;
+		while (i>0)
+		{
+		    i>>=1;
+		    if(idx>=size) idx-=i;
+		    else if(table[idx]>=val) {pos=idx-1; idx-=i;}
+		    else {val-=table[idx]; idx+=i;}
+		}
+		return pos;
+	}
 }
