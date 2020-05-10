@@ -7,8 +7,8 @@
   MOD inside fenwick tree, when needed, will be applied to update, sum and rangeSum functions. 
   MOD inside fenwick tree affects its speed significantly.
   
-  Search finds the index with a given cumulative frequency. Search doesn't work in case of MOD.
-  In case of negative elements or huge elements, use coordinate compression and answer queries offline.
+  Search finds the index with a given cumulative frequency in O(logN).
+  In case of negative indices or huge indices, use coordinate compression and answer queries offline.
 */
 
 static class BIT
