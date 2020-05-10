@@ -1,11 +1,14 @@
 /*
-  Binary-Indexed Tree or BIT.
+  Binary-Indexed Tree or BIT. Also works as an Order Statistic Tree.
   0-indexed. (Internally it is 1-indexed, but we don't care about that while using it).
   Format: new BIT(N).
   
   Take care to make the table long if any range sum has a chance to exceed int size.
   MOD inside fenwick tree, when needed, will be applied to update, sum and rangeSum functions. 
   MOD inside fenwick tree affects its speed significantly.
+  
+  Search finds the index with a given cumulative frequency. Search doesn't work in case of MOD.
+  In case of negative elements or huge elements, use coordinate compression and answer queries offline.
 */
 
 static class BIT
