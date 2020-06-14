@@ -1,0 +1,5 @@
+Sometimes we need to create hashset/hashmap on pairs. To do this, either:
+
+1) Using String type: HashSet<String>, and add x+" "+y, or
+2) Write a custom hash function, and override equals and hashCode(): 
+   https://www.geeksforgeeks.org/override-equalsobject-hashcode-method/
