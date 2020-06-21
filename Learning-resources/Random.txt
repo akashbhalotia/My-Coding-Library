@@ -1,2 +1,3 @@
 https://www.quora.com/What-are-10-problems-from-SPOJ-and-CodeChef-which-cover-all-topics-for-INOI-preparation
 https://www.quora.com/What-is-the-best-way-to-teach-competitive-programming-to-a-total-beginner/answer/Ashish-Gupta-211?share=bc64fd2a&srid=ihpN
+https://codeforces.com/blog/entry/57282
