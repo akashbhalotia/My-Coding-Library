@@ -17,8 +17,6 @@
   Example problem: https://codeforces.com/problemset/problem/342/E
 */
 
-
-
 private static int[] par, size;
 private static boolean[] found;
 
