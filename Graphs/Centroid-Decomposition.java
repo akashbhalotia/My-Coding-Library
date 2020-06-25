@@ -17,7 +17,7 @@
   Example problem: https://codeforces.com/problemset/problem/342/E
 */
 
-private static int[] par, size;
+private static int par[], size[];
 private static boolean[] found;
 
 private static int DFS2(int u, int p)
