@@ -8,3 +8,5 @@ Number of primes <=N is approximately = N/ln(N)
 
 a^(-1) = a^(m-2) mod m, if a and m are co-prime.
 Also, (a^n)^(-1) is simply (a^(-1))^n obviously.
+
+Cosine rule, for finding the sides and angles of a triangle: a^2=b^2+c^2-2*b*c*cos(A) 
