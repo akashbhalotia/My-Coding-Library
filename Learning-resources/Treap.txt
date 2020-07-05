@@ -1,1 +1,2 @@
 https://medium.com/carpanese/a-visual-introduction-to-treap-data-structure-part-1-6196d6cc12ee
+https://codeforces.com/blog/entry/79761
