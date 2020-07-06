@@ -2,3 +2,4 @@ https://www.youtube.com/watch?v=iTMn0Kt18tg
 https://codeforces.com/blog/entry/43499
 https://codeforces.com/blog/entry/48798
 https://cp-algorithms.com/algebra/fft.html
+https://codeforces.com/blog/entry/79796?#comment-657156
