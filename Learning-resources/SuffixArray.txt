@@ -1,0 +1,2 @@
+https://codeforces.com/edu/course/2/lesson/2
+https://cp-algorithms.com/string/suffix-array.html
