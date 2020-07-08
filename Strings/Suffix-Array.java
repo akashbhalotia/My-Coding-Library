@@ -16,6 +16,7 @@
   lcp-> Longest Common Prefix between suffixes i and i+1 in the suffix array.
   
   lcp(i,j)=min(lcp[i],lcp[i+1],...,lcp[j-1]). Use any RMQ structure.
+  For substring comparison, refer to: https://codeforces.com/edu/course/2/lesson/2/5/practice/contest/269656/problem/C
 */
 
 static class SuffixArray
