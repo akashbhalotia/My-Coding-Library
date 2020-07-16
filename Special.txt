@@ -1,3 +1,4 @@
 https://codeforces.com/blog/entry/7770
 https://blog.anudeep2011.com/
 https://medium.com/@andreimargeloiu/how-to-prepare-for-competitive-programming-396d557e0c12
+https://lukipuki.github.io/contest-wiki/team-strategy.html
