@@ -1,3 +1,4 @@
+https://www.geeksforgeeks.org/how-to-prepare-for-acm-icpc/
 https://www.quora.com/q/howdoibecomeagoogler/How-Do-I-become-a-good-competitive-programmer-and-what-are-the-materials-I-need-to-study-from
 https://www.quora.com/What-are-10-problems-from-SPOJ-and-CodeChef-which-cover-all-topics-for-INOI-preparation
 https://www.quora.com/What-is-the-best-way-to-teach-competitive-programming-to-a-total-beginner/answer/Ashish-Gupta-211?share=bc64fd2a&srid=ihpN
