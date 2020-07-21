@@ -26,7 +26,7 @@ private static long _discreteLog(long a, long b, long m)
     long N=(long)Math.sqrt(m)+1,an=1;
     for(int i=1;i<=N;i++) an=(an*a)%m;
 
-    for(long q=0,cur=b;q<=N;q++)
+    for(long q=0,cur=b;q<N;q++)
     {
         map.put(cur,q);
         cur=(cur*a)%m;
