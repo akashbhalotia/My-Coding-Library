@@ -1,8 +1,7 @@
 /*
   Finds the smallest primitive root of a number N.
   
-  Primitive root, g, of a number N is a number that generates all numbers coprime to N,
-  for some power of g, mod N. 
+  Primitive root, g, of a number N is a number that generates all numbers coprime to N, mod N. 
   In other words, g is a primitive root of N, if for all a such that gcd(a,N)=1, there exists an integer k,
   such that g^k=a mod n.
   
