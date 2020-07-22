@@ -1,5 +1,5 @@
 /*
-  Finds the primitive root of a number N.
+  Finds the smallest primitive root of a number N.
   
   Primitive root, g, of a number N is a number that generates all numbers coprime to N,
   for some power of g, mod N. 
