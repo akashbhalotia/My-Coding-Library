@@ -9,7 +9,7 @@
   
   _pow-> gives a^b mod m in O(log b).
   _factorization-> gives phi(N) if mode is false, 
-                   else gives a list of all prime factors of N, in O(sqrt(N)).
+                   else gives a list of all prime factors of phi, in O(sqrt(N)).
   
   root is O(log^6 N).
   Run Time of algorithm is O(root * log phi(N) * log N), which is approximately O(log^8 N).
