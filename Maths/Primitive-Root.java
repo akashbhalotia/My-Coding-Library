@@ -8,6 +8,10 @@
   
   Primitive roots exist iff N=1, 4, Prime, (odd prime)^k, 2*(odd prime)^k.
   
+  _pow-> gives a^b mod m in O(log b).
+  _factorization-> gives phi(N) if mode is false, 
+                   else gives a list of all prime factors of N, in O(sqrt(N)).
+  
   root is O(log^6 n).
   Run Time of algorithm is O(root * log phi(n) * log n), which is approximately O(log^8 n).
   
