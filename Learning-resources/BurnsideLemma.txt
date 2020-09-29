@@ -1,0 +1,3 @@
+https://codeforces.com/blog/entry/51272
+https://cp-algorithms.com/combinatorics/burnside.html
+https://www.geeksforgeeks.org/orbit-counting-theorem-or-burnsides-lemma/
