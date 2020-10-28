@@ -1,6 +1,6 @@
 /*
   Ordered MultiSet in java using TreeMap.
-  Can be iterator over.
+  Can be iterated over.
   
   setSize() returns the number of distinct elements in the multiset.
   Other method names are either self-explanatory, 
