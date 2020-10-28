@@ -10,3 +10,8 @@ a^(-1) = a^(m-2) mod m, if a and m are co-prime.
 Also, (a^n)^(-1) is simply (a^(-1))^n obviously.
 
 Cosine rule, for finding the sides and angles of a triangle: a^2=b^2+c^2-2*b*c*cos(A) 
+
+Goldbach Conjecture:    
+Every even number greater than 2 can be represented as the sum of 2 primes.    
+Odd number N can be represented only if N-2 is prime. Otherwise, it can be represented as 3
+and then two other primes adding up to N-3.
