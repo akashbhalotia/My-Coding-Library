@@ -19,3 +19,5 @@ and then two other primes adding up to N-3.
 a + b = (a ^ b) + 2(a & b)      
 a + b = (a | b) + 2(a & b)     
 a ^ b = (a | b) - (a & b)
+
+Upto 1e12, gap between two consecutive primes is at most 300.
