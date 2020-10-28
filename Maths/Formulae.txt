@@ -15,3 +15,7 @@ Goldbach Conjecture:
 Every even number greater than 2 can be represented as the sum of 2 primes.    
 Odd number N can be represented only if N-2 is prime. Otherwise, it can be represented as 3
 and then two other primes adding up to N-3.
+
+a + b = (a ^ b) + 2(a & b)      
+a + b = (a | b) + 2(a & b)     
+a ^ b = (a | b) - (a & b)
