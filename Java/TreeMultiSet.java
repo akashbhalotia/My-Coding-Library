@@ -2,7 +2,8 @@
   Ordered MultiSet in java using TreeMap.
   Can be iterator over.
   
-  Method names are either self-explanatory, 
+  setSize() returns the number of distinct elements in the multiset.
+  Other method names are either self-explanatory, 
   or same as TreeSet.
 */
 
@@ -19,6 +20,7 @@ static class TreeMultiSet<T> implements Iterable<T>
     }
     public void clear(){map.clear(); size=0;}
     public int size(){return size;}
+    public int setSize(){return map.size();}
     public boolean contains(T a){return map.containsKey(a);}
     public boolean isEmpty(){return size==0;}
     public Integer get(T a){return map.getOrDefault(a,0);}
