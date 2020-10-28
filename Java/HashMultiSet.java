@@ -1,5 +1,7 @@
 /*
   Hash MultiSet in java. Implemented using HashMap.
+  It can be iterated over.
+  
   Methods are self-explanatory.
 */
 
