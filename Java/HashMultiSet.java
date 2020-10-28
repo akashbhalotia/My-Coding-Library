@@ -2,7 +2,8 @@
   Hash MultiSet in java. Implemented using HashMap.
   It can be iterated over.
   
-  Methods are self-explanatory.
+  setSize() returns the number of distinct elements in the multiset.
+  Other methods are self-explanatory.
 */
 
 static class HashMultiSet<T> implements Iterable<T>
@@ -13,6 +14,7 @@ static class HashMultiSet<T> implements Iterable<T>
     public HashMultiSet(){map=new HashMap<>(); size=0;}
     public void clear(){map.clear(); size=0;}
     public int size(){return size;}
+    public int setSize(){return map.size();}
     public boolean contains(T a){return map.containsKey(a);}
     public boolean isEmpty(){return size==0;}
     public Integer get(T a){return map.getOrDefault(a,0);}
