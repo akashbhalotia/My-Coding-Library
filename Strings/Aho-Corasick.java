@@ -31,6 +31,9 @@
   To find the words that start at each position, reverse all input.
   (Patterns, text and also the array which stores the number of patterns 
   ending at each position, if such an array is needed).
+  
+  Iterating over all the terminal nodes is O(Q*sqrtN). Refer to: 
+  https://codeforces.com/blog/entry/84149?#comment-716387
    
   Problem: https://codeforces.com/contest/1202/problem/E
   Solution: https://codeforces.com/contest/1202/submission/75570323
