@@ -17,7 +17,7 @@ Odd number N can be represented only if N-2 is prime. Otherwise, it can be repre
 and then two other primes adding up to N-3.
 
 a + b = (a ^ b) + 2(a & b)      
-a + b = (a | b) + 2(a & b)     
+a + b = (a | b) + (a & b)   
 a ^ b = (a | b) - (a & b)
 
 Upto 1e12, gap between two consecutive primes is at most 300.
