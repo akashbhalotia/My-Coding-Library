@@ -21,3 +21,5 @@ a + b = (a | b) + (a & b)
 a ^ b = (a | b) - (a & b)
 
 Upto 1e12, gap between two consecutive primes is at most 300.
+
+Sum of N terms of an AP series: N/2[2a+(N-1)d]
