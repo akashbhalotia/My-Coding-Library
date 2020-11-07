@@ -5,6 +5,8 @@
   Only works if the elements of at least one sequence are distinct.
   
   
-  Find the longest common subsequence between K arrays: https://codeforces.com/problemset/problem/463/D
-  Only works when the elements of each array are distinct.
+  Find the longest common subsequence between K arrays. O(N*N*K).
+  Solution: https://codeforces.com/problemset/problem/463/D
+  
+  Only works if the elements of each array are distinct.
 */
