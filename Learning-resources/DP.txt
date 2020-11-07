@@ -1,0 +1,2 @@
+1) Digit-DP: https://codeforces.com/blog/entry/53960
+2) SOS-DP: https://codeforces.com/blog/entry/45223
