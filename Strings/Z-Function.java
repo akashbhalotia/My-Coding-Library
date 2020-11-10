@@ -9,9 +9,9 @@ private static void computeZArr(char str[], int z[])
     for(int i=1;i<N;i++)
     {
         if(i<=r)
-        z[i]=Math.min(r-i+1,z[i-l]);
-        while (i+z[i]<N&&str[i]==str[i+z[i]])
-            ++z[i];
+          z[i]=Math.min(r-i+1,z[i-l]);
+        while (i+z[i]<N&&str[z[i]]==str[i+z[i]])
+           ++z[i];
         if(i+z[i]-1>r)
         {
             l=i;
