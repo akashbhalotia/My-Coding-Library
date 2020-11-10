@@ -3,7 +3,7 @@
   z[i] = longest common prefix between the main string and the suffix starting at i.
 */
 
-private static void computeZArr(char str[], int z[])
+private static void computeZArr(char[] str, int[] z)
 {
     int l = 0, r = 0, N = str.length;
     for (int i = 1; i < N; i++)
