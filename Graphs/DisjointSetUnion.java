@@ -4,7 +4,7 @@
 
 static class DSU
 {
-    int parent[], size[];
+    int[] parent, size;
     DSU(int N)
     {
         parent=new int[N];
