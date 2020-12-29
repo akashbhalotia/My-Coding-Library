@@ -5,3 +5,7 @@
                   angles A (opp. to a), B (oop. to b) and C (opp. to c)
   
    (sin A)/a = (sin B)/b = (sin C)/c
+   
+3) **Circumradius of the above, R:**    
+
+    2R = (sin A)/a = (sin B)/b = (sin C)/c
