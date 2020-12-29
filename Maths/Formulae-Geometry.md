@@ -4,8 +4,8 @@
 2) **Sine Rule:** For a triangle with sides a, b and c, and    
                   angles A (opp. to a), B (oop. to b) and C (opp. to c)
   
-   (sin A)/a = (sin B)/b = (sin C)/c
+   a/(sin A) = b/(sin B) = c/(sin C)
    
 3) **Circumradius of the above, R:**    
 
-    2R = (sin A)/a = (sin B)/b = (sin C)/c
+    2R = a/(sin A) = b/(sin B) = c/(sin C)
