@@ -9,3 +9,11 @@
 3) **Circumradius of the above, R:**    
 
     2R = a/(sin A) = b/(sin B) = c/(sin C)
+    
+4) **Cos rule:**    
+    
+    a^2 = b^2 + c^2 - 2.b.c.cos A      
+    b^2 = a^2 + c^2 - 2.a.c.cos B      
+    c^2 = a^2 + b^2 - 2.a.b.cos C      
+    
+ 
