@@ -10,7 +10,7 @@
 
     2R = a/(sin A) = b/(sin B) = c/(sin C)
     
-4) **Cos rule:**    
+4) **Cos Rule:**    
     
     a^2 = b^2 + c^2 - 2.b.c.cos A      
     b^2 = a^2 + c^2 - 2.a.c.cos B      
