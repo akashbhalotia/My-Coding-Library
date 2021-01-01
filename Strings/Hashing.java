@@ -59,3 +59,38 @@ static class DoubleHash
         return this.h1.isEqual(dh2.h1,l1,r1,l2,r2)&&this.h2.isEqual(dh2.h2,l1,r1,l2,r2);
     }
 }
+
+/*
+	Optimised.
+	CAUTION: May be prone to errors. Not well tested. 
+*/
+
+static class Hashing
+{
+    long[] hash,pow;
+    final long P, MOD;
+    int N;
+
+    Hashing(char[] str, long P, long MOD)
+    {
+        this.N=str.length;this.P=P;this.MOD=MOD;
+        hash=new long[N+1];pow=new long[N+1];
+        init(str);
+    }
+    void init(char[] str)
+    {
+        pow[0]=1;
+        for(int i=N-1;i>=0;i--)
+        {
+            hash[i]=add(prod(hash[i+1],P),(str[i]-'a'+1));
+            pow[N-i]=prod(pow[N-i-1],P);
+        }
+        pow[N]=prod(pow[N-1],P);
+    }
+    long getHash(){return getHash(0,N-1);}
+    long getHash(int l, int r){return subtract(hash[l],prod(hash[r+1],pow[r-l+1]));}
+
+    long add(long a, long b){a+=b; return (a>=MOD)?a-MOD:a;}
+    long subtract(long a, long b){a-=b; return (a<0)?a+MOD:a;}
+    long prod(long a, long b){a*=b; return (a>=MOD)?a%MOD:a;}
+}
