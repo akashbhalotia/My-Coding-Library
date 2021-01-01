@@ -14,12 +14,14 @@
     
     Some values for P: 31, 53, 137, 257, 991, 99991, 999917. Or choose any from here: https://tinyurl.com/vhd3xvv
     Some values for MOD: 1e9 +7, +9, +21, +33, +87.
+    
+    ERRORS: Make sure to modify "str[i]-'a'+1" to appropriate domain in case the domain is not lowercase.
 */
 
 static class Hashing
 {
     long[] hash,pow;
-    long P, MOD;
+    final long P, MOD;
     int N;
 
     Hashing(char[] str, long P, long MOD)
