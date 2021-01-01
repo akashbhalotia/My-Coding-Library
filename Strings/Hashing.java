@@ -22,13 +22,13 @@ static class Hashing
     long P, MOD;
     int N;
 
-    Hashing(char str[], long P, long MOD)
+    Hashing(char[] str, long P, long MOD)
     {
         this.N=str.length;this.P=P;this.MOD=MOD;
         hash=new long[N+1];pow=new long[N+1];
         init(str);
     }
-    void init(char str[])
+    void init(char[] str)
     {
         pow[0]=1;
         for(int i=N-1;i>=0;i--)
