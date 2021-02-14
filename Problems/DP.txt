@@ -1,4 +1,4 @@
-SOS-DP
+Bitmask-DP
 -------
 
 1) https://codeforces.com/contest/453/problem/B
