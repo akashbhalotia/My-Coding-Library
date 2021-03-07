@@ -1,0 +1,567 @@
+aip
+br.readLine().trim().split(" ");
+
+array
+int[] a=new int[N];
+
+dip
+Double.parseDouble(br.readLine().trim());
+
+dpd
+Double.parseDouble($END$);
+
+exit
+System.exit(0);
+
+fastio
+static class Reader 
+{ 
+    final private int BUFFER_SIZE = 1 << 16;private DataInputStream din;private byte[] buffer;private int bufferPointer, bytesRead;
+    public Reader(){din=new DataInputStream(System.in);buffer=new byte[BUFFER_SIZE];bufferPointer=bytesRead=0;
+    }public Reader(String file_name) throws IOException{din=new DataInputStream(new FileInputStream(file_name));buffer=new byte[BUFFER_SIZE];bufferPointer=bytesRead=0;
+    }public String readLine() throws IOException{byte[] buf=new byte[64];int cnt=0,c;while((c=read())!=-1){if(c=='\n')break;buf[cnt++]=(byte)c;}return new String(buf,0,cnt);
+    }public int nextInt() throws IOException{int ret=0;byte c=read();while(c<=' ')c=read();boolean neg=(c=='-');if(neg)c=read();do{ret=ret*10+c-'0';}while((c=read())>='0'&&c<='9');if(neg)return -ret;return ret;
+    }public long nextLong() throws IOException{long ret=0;byte c=read();while(c<=' ')c=read();boolean neg=(c=='-');if(neg)c=read();do{ret=ret*10+c-'0';}while((c=read())>='0'&&c<='9');if(neg)return -ret;return ret;
+    }public double nextDouble() throws IOException{double ret=0,div=1;byte c=read();while(c<=' ')c=read();boolean neg=(c=='-');if(neg)c = read();do {ret=ret*10+c-'0';}while((c=read())>='0'&&c<='9');if(c=='.')while((c=read())>='0'&&c<='9')ret+=(c-'0')/(div*=10);if(neg)return -ret;return ret;
+    }private void fillBuffer() throws IOException{bytesRead=din.read(buffer,bufferPointer=0,BUFFER_SIZE);if(bytesRead==-1)buffer[0]=-1;
+    }private byte read() throws IOException{if(bufferPointer==bytesRead)fillBuffer();return buffer[bufferPointer++];
+    }public void close() throws IOException{if(din==null) return;din.close();}
+}
+
+fill
+Arrays.fill(a,-1);
+
+forip
+for(i=0;i<N;i++) a[i]=Integer.parseInt(s[i]);
+
+generatortmpl
+// Created by akashbhalotia
+
+/*
+    Generator for OSMMOD
+    gen0: -> Sample case
+    gan1: -> Subtask 1
+    gen2: -> Subtask 2
+    gen3: -> Subtask 3
+ */
+
+import java.io.*;
+import java.util.*;
+class generator
+{
+    private static StringBuilder sb;
+    private static BufferedWriter bw;
+    private static BufferedReader br;
+    private static FileWriter fw;
+    private static FileReader fr;
+    private static Solver solver;
+    private static ArrayList<ArrayList<Character>> str=new ArrayList<>();
+
+    private static final int MAX_N=(int)(1e5),MAX_Q=(int)(1e5),MAX_L=50,ln=1;
+
+    static class Solver //Solves the problem
+    {
+        int solve(int a[], int N)
+        {
+            Arrays.sort(a);
+
+            int i,ans=a[0],count=1,maxCount=count;
+
+            for(i=1;i<N;i++)
+            {
+                if(a[i]==a[i-1])
+                    count++;
+                else
+                    count=1;
+                if(count>maxCount)
+                {
+                    ans=a[i];
+                    maxCount=count;
+                }
+            }
+            return ans;
+        }
+        void read() throws IOException //reads input from file
+        {
+            int i,N;
+
+            int T=Integer.parseInt(br.readLine().trim());
+
+            while(T-->0)
+            {
+                N=Integer.parseInt(br.readLine().trim());
+                int a[]=new int[N];
+                String s[]=br.readLine().trim().split(" ");
+
+                for(i=0;i<N;i++)
+                    a[i]=Integer.parseInt(s[i]);
+
+                sb.append(solve(a,N)).append("\n");
+            }
+        }
+        void run() throws IOException //method to run the solver
+        {
+            read();
+        }
+    }
+    //////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    private static void close(int state) throws IOException //closes files
+    {
+        if(state==0)
+            br.close();
+        bw.close();
+    }
+
+    private static void init_input(String in) throws IOException //initialises in file
+    {
+        fw=new FileWriter(in);
+        bw=new BufferedWriter(fw);
+        sb.setLength(0);
+    }
+
+    private static void writer(int state) throws IOException //writes to file
+    {
+        bw.write(sb.toString());
+        close(state);
+    }
+
+    private static void init_output(String in, String out) throws IOException //initialises out file
+    {
+        fr=new FileReader(in);
+        fw=new FileWriter(out);
+
+        br = new BufferedReader(fr);
+        bw = new BufferedWriter(fw);
+        sb.setLength(0);
+
+        solver=new Solver();
+        solver.run();
+        writer(0); //0 -> output. 1 -> input
+    }
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    //helper functions
+    private static void addArr(ArrayList<Character> str)
+    {
+        for(int i=0;i<str.size();i++)
+            sb.append(str.get(i));
+        sb.append("\n");
+    }
+    private static void add(int val, int ln)
+    {
+        sb.append(val).append("\n");
+    }
+    private static int random(int start, int end)
+    {
+        return start+(int)(Math.random()*(end-start+1));
+    }
+
+    //////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    private static void gen0(String in, String out) throws IOException
+    {
+        /*
+
+
+         */
+
+        init_input(in);
+        //Generation
+
+        int N,Q,L,i,j,k,tmp,pref,pos;
+
+        N=MAX_N; Q=MAX_Q; L=MAX_L;
+        for(i=0;i<str.size();i++)
+            str.get(i).clear();
+
+        add(N,ln);
+        //tmp=random(1,L);
+        for(i=0;i<L;i++)
+            str.get(0).add((char)(random('a','z')));
+        addArr(str.get(0));
+
+        for(i=1;i<N;i++)
+        {
+            //tmp=random(1,L);
+            tmp=L;
+            pos=random(0,i-1);
+            pref=random(0,Math.min(tmp,str.get(pos).size()));
+
+            for(j=0;j<pref;j++)
+                str.get(i).add(str.get(pos).get(j));
+            for(;j<tmp;j++)
+                str.get(i).add((char)(random('a','z')));
+
+            addArr(str.get(i));
+        }
+
+        add(Q,ln);
+
+        for(;i<Q+N;i++)
+        {
+            //tmp=random(1,L);
+            tmp=L;
+            pos=random(0,i-1);
+            pref=random(0,Math.min(tmp,str.get(pos).size()));
+
+            for(j=0;j<pref;j++)
+                str.get(i).add(str.get(pos).get(j));
+            for(;j<tmp;j++)
+                str.get(i).add((char)(random('a','z')));
+
+            addArr(str.get(i));
+        }
+
+        writer(1); //0 -> output. 1 -> input
+        //init_output(in,out);
+    }
+    private static void gen1(String in, String out) throws IOException
+    {
+        /*
+
+
+         */
+
+        init_input(in);
+        //Generation
+
+        int N,Q,L,i,j,k,tmp,pref,pos;
+
+        N=MAX_N; Q=MAX_Q; L=MAX_L;
+        for(i=0;i<str.size();i++)
+            str.get(i).clear();
+
+        add(N,ln);
+        //tmp=random(1,L);
+        for(i=0;i<L;i++)
+            str.get(0).add((char)(random('a','z')));
+        addArr(str.get(0));
+
+        for(i=1;i<N;i++)
+        {
+            //tmp=random(1,L);
+            tmp=L;
+            pos=random(0,i-1);
+            pref=random(1,Math.min(tmp,str.get(pos).size()));
+
+            if(random(1,2)==1)
+                pref=0;
+
+//            for(j=0;j<pref;j++)
+//                str.get(i).add(str.get(pos).get(j));
+            for(j=0;j<tmp;j++)
+                str.get(i).add((char)(random('a','z')));
+
+            addArr(str.get(i));
+        }
+
+        add(Q,ln);
+
+        for(;i<Q+N;i++)
+        {
+            //tmp=random(1,L);
+            tmp=L;
+            //pos=random(0,i-1);
+            //pref=random(1,Math.min(tmp,str.get(pos).size()));
+
+//            if(random(1,2)==1)
+//                pref=0;
+
+//            for(j=0;j<pref;j++)
+//                str.get(i).add(str.get(pos).get(j));
+            for(j=0;j<tmp;j++)
+                str.get(i).add((char)(random('a','z')));
+
+            addArr(str.get(i));
+        }
+
+        writer(1); //0 -> output. 1 -> input
+        //init_output(in,out);
+    }
+    private static void gen2(String in, String out) throws IOException
+    {
+        /*
+
+         */
+
+        init_input(in);
+        //Generation
+
+        int N,Q,L,i,j,k,tmp,pref,pos;
+
+        N=MAX_N; Q=MAX_Q; L=MAX_L;
+        for(i=0;i<str.size();i++)
+            str.get(i).clear();
+
+        add(N,ln);
+        tmp=random(1,L);
+        for(i=0;i<L;i++)
+            str.get(0).add((char)(random('a','z')));
+        addArr(str.get(0));
+
+        for(i=1;i<N;i++)
+        {
+            tmp=random(1,L);
+            pos=random(0,i-1);
+            pref=random(1,Math.min(tmp,str.get(pos).size()));
+
+            if(random(1,4)<4)
+                pref=0;
+
+            for(j=0;j<pref;j++)
+                str.get(i).add(str.get(pos).get(j));
+            for(;j<tmp;j++)
+                str.get(i).add((char)(random('a','z')));
+
+            addArr(str.get(i));
+        }
+
+        add(Q,ln);
+
+        for(;i<Q+N;i++)
+        {
+            tmp=random(1,L);
+            pos=random(0,i-1);
+            pref=random(0,Math.min(tmp,str.get(pos).size()));
+
+            for(j=0;j<pref;j++)
+                str.get(i).add(str.get(pos).get(j));
+            for(;j<tmp;j++)
+                str.get(i).add((char)(random('a','z')));
+
+            addArr(str.get(i));
+        }
+
+        writer(1); //0 -> output. 1 -> input
+        //init_output(in,out);
+    }
+    private static void gen3(String in, String out) throws IOException
+    {
+        /*
+
+
+         */
+
+        init_input(in);
+        //Generation
+
+        int N,Q,L,i,j,k,tmp,pref,pos;
+
+        N=MAX_N-5; Q=MAX_Q-6; L=MAX_L;
+        for(i=0;i<str.size();i++)
+            str.get(i).clear();
+
+        add(N,ln);
+        tmp=random(1,L);
+        for(i=0;i<L;i++)
+            str.get(0).add((char)(random('a','z')));
+        addArr(str.get(0));
+
+        for(i=1;i<N;i++)
+        {
+            tmp=random(1,L);
+            for(j=0;j<tmp;j++)
+                str.get(i).add((char)(random('a','z')));
+
+            addArr(str.get(i));
+        }
+
+        add(Q,ln);
+
+        for(;i<Q+N;i++)
+        {
+            tmp=random(1,L);
+            for(j=0;j<tmp;j++)
+                str.get(i).add((char)(random('a','z')));
+
+            addArr(str.get(i));
+        }
+
+        writer(1); //0 -> output. 1 -> input
+        //init_output(in,out);
+    }
+
+    //////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    private static void init()
+    {
+        sb=new StringBuilder();
+        str=new ArrayList<>();
+        for(int i=0;i<MAX_N+MAX_Q;i++)
+            str.add(new ArrayList<>());
+    }
+
+    public static void main(String[] args) throws Exception
+    {
+        init();
+
+        //gen0("0.in","0.out");
+        gen1("1.in","1.out");
+        //gen2("2.in","52.out");
+        //gen3("53.in","3.out");
+    }
+}
+
+google
+//created by Whiplash99
+import java.io.*;
+import java.util.*;
+public class Solution
+{
+    private static BufferedReader br;
+    private static StringBuilder sb;
+
+    private static void solve(int T) throws Exception
+    {
+        int i,N;
+
+        $END$
+                
+        sb.append("Case #").append(T).append(": ");
+    }
+    public static void main(String[] args) throws Exception
+    {
+        br=new BufferedReader(new InputStreamReader(System.in));
+        sb=new StringBuilder();
+
+        int T=Integer.parseInt(br.readLine().trim());
+        for(int i=1;i<=T;i++) solve(i);
+
+        System.out.println(sb);
+    }
+}
+
+iip
+Integer.parseInt(br.readLine().trim());
+
+ipi
+Integer.parseInt($END$);
+
+lip
+Long.parseLong(br.readLine().trim());
+
+lpl
+Long.parseLong($END$);
+
+ModArith
+private static final long MOD=(long) (1e9+7);
+private static long add(long a, long b){a+=b; return a>MOD?a-MOD:a;}
+private static long sub(long a, long b){a-=b; return a<0?a+MOD:a;}
+private static long mul(long a, long b){a*=b; return a>MOD?a%MOD:a;}
+private static long pow(long a, long b)
+{
+    long res=1;
+    while (b>0)
+    {
+        if((b&1)==1) res=mul(res,a);
+        a=mul(a,a);
+        b>>=1;
+    }
+    return MOD==1?0:res;
+}
+private static long div(long a, long b)
+{
+    long inv=pow(b,MOD-2);
+    return mul(a,inv);
+}
+
+paircmp
+static class Pair implements Comparable<Pair>
+{
+    int f, s;
+    Pair(int f, int s){this.f = f;this.s = s;}
+    public int compareTo(Pair b){return Integer.compare(this.s,b.s);}
+}
+
+pairgen
+static class Pair<XX extends Comparable<XX>, YY extends Comparable<YY>> implements Comparable<Pair<XX, YY>>
+{
+    XX f;YY s;
+    Pair(XX f, YY s){this.f = f;this.s = s;}
+    public int compareTo(Pair<XX,YY> b){return this.s.compareTo(b.s);}
+}
+
+pairtmpl
+static class Pair
+{
+    int f, s;
+    Pair(int f, int s){this.f = f;this.s = s;}
+}
+
+sbl
+StringBuilder sb=new StringBuilder();
+
+shuff
+private static void shuffleArray(int[] arr)
+{ 
+    int n = arr.length;
+    Random rnd = new Random();
+    for(int i=0; i<n; ++i)
+    { 
+        int tmp = arr[i];
+        int randomPos = i + rnd.nextInt(n-i);
+        arr[i] = arr[randomPos];
+        arr[randomPos] = tmp;
+    }
+}
+
+sip
+br.readLine().trim();
+
+sort
+Arrays.sort(a);
+
+tmpgcd
+private static long _gcd(long a, long b) {return a==0?b:_gcd(b%a,a);}
+
+tmpl
+//created by Whiplash99
+import java.io.*;
+import java.util.*;
+public class A
+{
+    public static void main(String[] args) throws Exception
+    {
+        BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+
+        int i,N;
+        
+        $END$
+    }
+}
+
+tmpl2
+//created by Whiplash99
+import java.io.*;
+import java.util.*;
+class A
+{
+    public static void main(String[] args) throws Exception
+    {
+        BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+        
+        int i,N;
+        
+        $END$
+    }
+}
+
+tmpmod1
+private static final long MOD=(long) (1e9+7);
+
+tmpmod2
+private static final long MOD=998244353;
+
+tmppow
+private static long pow(long a, long b)
+{
+    a%=MOD;
+    //b%=(MOD-1);//if MOD is prime
+    long res=1;
+    while (b>0)
+    {
+        if((b&1)==1)
+            res=(res*a)%MOD;
+        a=(a*a)%MOD;
+        b>>=1;
+    }
+    return res%MOD;
+}
