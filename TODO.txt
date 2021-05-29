@@ -1,0 +1,4 @@
+List of templates to add:
+
+1) next_permutation (also see heap's algorithm)
+2) range update point query,
