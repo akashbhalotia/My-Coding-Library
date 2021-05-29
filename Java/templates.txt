@@ -29,7 +29,7 @@ static class Reader
 }
 
 fill
-Arrays.fill(a,-1);
+Arrays.fill(a$END$,-1);
 
 forip
 for(i=0;i<N;i++) a[i]=Integer.parseInt(s[i]);
