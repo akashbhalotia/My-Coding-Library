@@ -565,3 +565,6 @@ private static long pow(long a, long b)
     }
     return res%MOD;
 }
+
+buff
+BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
