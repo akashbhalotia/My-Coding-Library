@@ -22,13 +22,17 @@ static class DSU
             return v;
         return parent[v]=find_set(parent[v]);
     }
+    boolean same_set(int a, int b)
+    {
+        return find_set(a)==find_set(b);
+    }
     boolean union_sets(int a, int b)
     {
         a=find_set(a);
         b=find_set(b);
-      
+
         if(a==b) return false;
-            
+
         if(size[a]<size[b])
         {
             int tmp=a;
@@ -37,7 +41,7 @@ static class DSU
         }
         parent[b]=a;
         size[a]+=size[b];
-      
+
         return true;
     }
 }
