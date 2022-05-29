@@ -16,6 +16,8 @@
     Some values for MOD: 1e9 +7, +9, +21, +33, +87.
     
     ERRORS: Make sure to modify "str[i]-'a'+1" to appropriate domain in case the domain is not lowercase.
+    
+    TODO: Handle empty strings. Maybe hash of empty string = 0.
 */
 
 static class Hashing
