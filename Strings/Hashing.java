@@ -18,6 +18,7 @@
     ERRORS: Make sure to modify "str[i]-'a'+1" to appropriate domain in case the domain is not lowercase.
     
     TODO: Handle empty strings. Maybe hash of empty string = 0.
+    Can optimise by removing getHash() with a variable hash, which remains constant.
 */
 
 static class Hashing
